@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import { TextField, Button } from '@mui/material';
+import {Link, redirect} from 'react-router-dom';
 
 const Form = () => {
   const [name, setname] = useState('')
@@ -28,6 +29,7 @@ const Form = () => {
         setname('')
         setphoneNumber('')
         setemail('')
+       
       };
       
   return (
@@ -54,6 +56,9 @@ const Form = () => {
       <Button variant="contained" color="primary" type="submit">
         Submit
       </Button>
+      <li>
+            <Link to="/Departments">Departments</Link>
+        </li>
     </form>
     </div>
   )
